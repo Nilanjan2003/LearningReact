@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 
 interface User {
@@ -16,6 +16,18 @@ const HooksUseEffect = () => {
         setTimeout(() => {
             ref1.current!.innerText = `Name : ${info.nm} | Designation : ${info.dp} | Age : ${info.age} | Location : ${info.loc}`
         }, 5000)
+    }, [info])
+
+    useEffect(() => {
+        return (
+            () => {
+                alert("Goodbye all ... Component is unloading now..!")
+            }
+        )
+    }, [])
+
+    useLayoutEffect(() => {
+        alert("Welcome, My component is loading now..!")
     }, [])
 
     return (
