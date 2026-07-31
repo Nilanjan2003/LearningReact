@@ -13,7 +13,8 @@
 // import bootstrap modules
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import HooksUseEffectLoader from './components/Hooks/HooksUseEffectLoader';
+// import HooksUseEffectLoader from './components/Hooks/HooksUseEffectLoader';
+import HooksUseMemo from './components/Hooks/HooksUseMemo';
 // import HooksPracticeScoreBoard from './components/Hooks/HooksPracticeScoreBoard';
 // import HooksUseRef from './components/Hooks/HooksuseRef';
 // import HooksUseEffect from './components/Hooks/HooksUseEffect';
@@ -99,7 +100,9 @@ function App() {
 
       {/* <HooksPracticeScoreBoard /> */}
 
-      <HooksUseEffectLoader />
+      {/* <HooksUseEffectLoader /> */}
+
+      <HooksUseMemo />
 
     </>
   )
